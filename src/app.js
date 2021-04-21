@@ -18,14 +18,14 @@ window.onload = function() {
       for (var j = 0; j < adj.length; j++) {
         for (var k = 0; k < noun.length; k++) {
           for (var l = 0; l < domain.length; l++) {
-            resp = pronoun[i] + adj[j] + noun[k] + domain[l];
+            resp += pronoun[i] + adj[j] + noun[k] + domain[l];
           }
         }
       }
     }
     return resp;
   }
-  let domainText = document.getElementById("listaDominios");
+  let domainText = document.getElementById("domain");
   let btnGenerator = document.getElementById("btnGenerator");
 
   btnGenerator.addEventListener("click", function() {
